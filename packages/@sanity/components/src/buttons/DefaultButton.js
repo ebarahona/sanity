@@ -60,6 +60,7 @@ export default class DefaultButton extends React.Component {
     const {kind, ripple, disabled, inverted, color, icon, loading, className, children, ...rest} = this.props
 
     const Icon = icon
+    const onlyIcon = icon && !children
 
     const style = [
       inverted && styles.inverted,
@@ -67,6 +68,7 @@ export default class DefaultButton extends React.Component {
       color && styles[`color__${color}`],
       icon && styles.hasIcon,
       className,
+      onlyIcon && styles.onlyIcon,
       disabled && styles.disabled,
       this.state.recentlyHovered ? styles.recentlyHovered : styles.notRecentlyHovered
     ].filter(Boolean).join(' ')
@@ -88,7 +90,7 @@ export default class DefaultButton extends React.Component {
             Icon && <Icon className={styles.icon} />
           }
           {
-            children && <span className={padContent ? styles.contentWithPad : styles.content}>{children}</span>
+            children && <span className={styles.content}>{children}</span>
           }
           {
             ripple && !disabled && <Ink duration={200} opacity={0.10} radius={200} />
