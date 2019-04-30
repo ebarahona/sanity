@@ -18,7 +18,7 @@
     "@sanity/desk-tool": "^0.123.1",
     "@sanity/google-maps-input": "^0.123.1",
     "@sanity/server": "^0.123.0",
-    "@sanity/storybook": "^0.123.0",
+    "@sanity/storybook": "^0.139.3",
     "prop-types": "^15.6.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
