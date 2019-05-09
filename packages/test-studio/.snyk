@@ -1,0 +1,11 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - bio-pv > browserify > glob > minimatch:
+        patched: '2019-05-09T23:27:53.114Z'
+  'npm:uglify-js:20151024':
+    - bio-pv > sniper > swig > uglify-js:
+        patched: '2019-05-09T23:27:53.114Z'
