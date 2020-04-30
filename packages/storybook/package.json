@@ -7,7 +7,9 @@
   "author": "Sanity.io <hello@sanity.io>",
   "license": "MIT",
   "scripts": {
-    "start": "sanity start --port=9002"
+    "start": "sanity start --port=9002",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@sanity/base": "^0.123.1",
@@ -21,7 +23,8 @@
     "@sanity/storybook": "^0.123.0",
     "prop-types": "^15.6.0",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "snyk": "^1.316.1"
   },
   "bugs": {
     "url": "https://github.com/sanity-io/sanity/issues"
@@ -38,5 +41,6 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sanity-io/sanity.git"
-  }
+  },
+  "snyk": true
 }
