@@ -29,7 +29,7 @@
     "@sanity/default-login": "^0.121.1",
     "@sanity/desk-tool": "^0.123.1",
     "@sanity/form-builder": "^0.123.1",
-    "@sanity/storybook": "^0.123.0",
+    "@sanity/storybook": "^0.139.3",
     "bio-pv": "^1.8.1",
     "date-fns": "^1.29.0",
     "fetch": "^1.1.0",
