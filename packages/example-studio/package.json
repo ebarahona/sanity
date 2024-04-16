@@ -22,7 +22,7 @@
     "@sanity/base": "^0.123.1",
     "@sanity/cli": "^0.123.0",
     "@sanity/code-input": "^0.123.1",
-    "@sanity/components": "^0.123.1",
+    "@sanity/components": "^0.136.3",
     "@sanity/core": "^0.123.1",
     "@sanity/date-input": "^0.123.1",
     "@sanity/default-layout": "^0.123.1",
